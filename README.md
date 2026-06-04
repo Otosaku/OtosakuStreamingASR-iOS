@@ -2,6 +2,19 @@
 
 **OtosakuStreamingASR** is a lightweight **on-device streaming speech recognition engine** for iOS. It performs real-time audio processing using a Conformer-based architecture and CTC decoding.
 
+> [!IMPORTANT]
+> ### 🚀 Successor project: VoxRT
+> Streaming on-device ASR has moved to **[VoxRT](https://github.com/VoxRT)** — a ground-up
+> rewrite on a custom Rust inference runtime. Same idea as `OtosakuStreamingASR`, but faster,
+> smaller, and now on **both** platforms:
+>
+> - **iOS →** [**voxrt-asr-ios**](https://github.com/VoxRT/voxrt-asr-ios) —
+>   NEON-accelerated FastConformer (32M), RTF **0.08–0.10** on iPhone 13 Pro Max, fully offline.
+> - **Android →** [**voxrt-asr-android**](https://github.com/VoxRT/voxrt-asr-android) —
+>   same engine, **~150 ms** latency, no cloud.
+>
+> This repo stays up for reference, but new development happens in VoxRT. 👉 Start there.
+
 ## 🚀 Features
 
 * ✅ Fully offline
